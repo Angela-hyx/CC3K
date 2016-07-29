@@ -106,7 +106,7 @@ void Floor::readFloor(string filename) {
         generateChamber();
         bool goTo = false;
        for (int start = 25*(curFloor-1); start < 25*curFloor; ++start) {
-	       int count = 0;
+	     int count = 0;
 	       while (start > count && goTo == false) {
 		       ++count;
 	       getline(file, s);
@@ -209,8 +209,9 @@ void Floor::readFloor(string filename) {
 				   row.emplace_back('X');
 				                              }
 			   else if (s[i]== 'E') {
-				   auto newEnemy = make_shared<Midterm> (start-25*(curFloor-1), i);                                                      theEnemy.emplace_back(newEnemy);
-													                                         row.emplace_back('E');
+				   auto newEnemy = make_shared<Midterm> (start-25*(curFloor-1), i);                                              
+				   theEnemy.emplace_back(newEnemy);
+				   row.emplace_back('E');
 														                                                               } 
 			   else if (s[i]== 'D') {
 				   vector<int> pos;

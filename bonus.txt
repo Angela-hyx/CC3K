@@ -1,0 +1,9 @@
+In the project CC3k, we have added the following features:
+1. We used vectors instead of arrays and shared pointers instead of raw pointers in our entire implementation.
+2. We added different colors to enemies, items and PC when printing to the screen.
+3. We added the “welcome” screen, “lose” screen, “win” screen and “byebye” screen when the player just enters the game, loses the game, wins the game and quits the game respectively.
+4. We added another type of enemy – Midterm (E), and another type of player character – Student, so that when student gets attacked by midterm, the student dies right away. Implementing such feature only needs to type in “dlc” in the command line when running the program.
+5. We provide three types of command line options, including adding default map, choosing seed(must be greater than 0) to randomly generate character and items, and adding DLC.
+  -  To  add default map: type in valid file name
+  -  To use seed for srand(), type in any integer greater than 0
+  -  To use DLC, type in “dlc” (must be lower case, otherwise unrecognized)
